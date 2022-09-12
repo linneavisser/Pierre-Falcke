@@ -7,6 +7,13 @@
     font-family: "Rubik", sans-serif;
     font-weight: 300;
   }
+  h3 {
+    font-family: "Pontano Sans", sans-serif;
+  }
+  p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 300;
+  }
 }
 @layer components{
   .wobble-hor-bottom:hover {
@@ -24,10 +31,6 @@
   font-weight: 300;
 }
 
-p {
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-}
 span.glitch-font {
   font-family: "Rubik Glitch", cursive;
 }
@@ -55,7 +58,32 @@ span.glitch-font {
   top: 30%;
 }
 
+/* Hurtige facts */
 
+.hurtige_facts_overskrift {
+  color: #8c6464;
+}
+
+#hurtige_facts {
+  background-color: #ede6e0;
+  z-index: 2;
+}
+
+.hurtige_facts_li {
+  color: #8c6464;
+  z-index: 3;
+}
+
+.millioner {
+  top: calc(-25%);
+  right: calc(20%);
+  font-family: termina, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  opacity: 0.8;
+  color: #d9c3b0;
+  z-index: 1;
+}
 
 
 
