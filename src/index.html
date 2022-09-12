@@ -4,9 +4,59 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Pierre Falcke</title>
+    <!--GLITCH font type-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap"
+      rel="stylesheet"
+    />
+    <!--GLITCH font type SLUT-->
+    <!--Brødtekst font type -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!--Brødtekst font type SLUT-->
   </head>
   <body>
+    <section class="grid place-content-center pt-96">
+      <h1 id="kunstig_h1" class="pb-1 text-4xl tracking-widest text-gray-300">
+        Fra Kunstig
+      </h1>
+      <div class="flex flex-row gap-6">
+        <p class="p-1 text-gray-300">til</p>
+        <div id="kunstner_h1" class="text-4xl tracking-wider text-amber-500">
+          <h1>Kunstner.</h1>
+        </div>
+      </div>
+      <p class="pt-2 text-xs text-gray-200">
+        En kort fortælling om fotografen Pierre Falcke
+      </p>
+    </section>
+    <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer-->
+    <section class="zoom_me">
+      <img src="camera_3.svg" alt="kamera_scroll" />
+    </section>
+
+    <!--Scroll effekten med fotografens billed i baggrunden-->
+    <section
+      class="billedet_af_fotografen w-100 parallaxcontainer mt-8 h-screen bg-[url('pierre.jpeg')]"
+    >
+      <h1 class="mx-auto w-1/2 p-10 text-xl">Pierre Falcke.</h1>
+    </section>
+
+    <section
+      class="billedet_af_fotografen w-100 parallaxcontainer mt-8 h-screen bg-[url('pierre.jpeg')]"
+    >
+      <p class="mx-auto w-1/2 bg-slate-50 p-10 text-xl">
+        Du ved formentligt ikke hvem han er.
+      </p>
+    </section>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
