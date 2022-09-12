@@ -23,41 +23,59 @@
     <!--Brødtekst font type SLUT-->
   </head>
   <body>
-<main class="overflow-clip">
-      <section class="grid place-content-center pt-96">
-        <h1 id="kunstig_h1" class="pb-1 text-4xl tracking-widest text-gray-300">
-          Fra Kunstig
-        </h1>
-        <div class="flex flex-row gap-6">
-          <p class="p-1 text-gray-300">til</p>
-          <div id="kunstner_h1" class="text-4xl tracking-wider text-amber-500">
-            <h1>Kunstner.</h1>
-          </div>
+    <section class="grid place-content-center pt-96">
+      <h1 id="kunstig_h1" class="pb-1 text-4xl tracking-widest text-gray-300">
+        Fra Kunstig
+      </h1>
+      <div class="flex flex-row gap-6">
+        <p class="p-1 text-gray-300">til</p>
+        <div id="kunstner_h1" class="text-4xl tracking-wider text-amber-500">
+          <h1>Kunstner.</h1>
         </div>
-        <p class="pt-2 text-xs text-gray-200">
-          En kort fortælling om fotografen Pierre Falcke
-        </p>
-      </section>
-      <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer-->
-      <section class="zoom_me">
-        <img src="camera_3.svg" alt="kamera_scroll" />
-      </section>
-  
-      <!--Scroll effekten med fotografens billed i baggrunden-->
-      <section
-        class="billedet_af_fotografen w-100 parallaxcontainer mt-8 h-screen bg-[url('pierre.jpeg')]"
+      </div>
+      <p class="pt-2 text-xs text-gray-200">
+        En kort fortælling om fotografen Pierre Falcke
+      </p>
+    </section>
+    <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer-->
+    <section class="zoom_me">
+      <img src="camera_3.svg" alt="kamera_scroll" />
+    </section>
+
+    <!--Scroll effekten med fotografens billed i baggrunden-->
+    <section>
+      <div
+        class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
       >
-        <h1 class="mx-auto w-1/2 p-10 text-xl">Pierre Falcke.</h1>
-      </section>
-  
-      <section
-        class="billedet_af_fotografen w-100 parallaxcontainer mt-8 h-screen bg-[url('pierre.jpeg')]"
+        <h1 class="mx-auto w-1/2 text-4xl">Pierre Falcke.</h1>
+      </div>
+      <div
+        class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
       >
-        <p class="mx-auto w-1/2 bg-slate-50 p-10 text-xl">
-          Du ved formentligt ikke hvem han er.
+        <p class="mx-auto w-1/2">Du ved formentligt ikke hvem han er.</p>
+      </div>
+      <div
+        class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+      >
+        <p class="mx-auto w-1/2">
+          Men indtil for kort tid siden, så du hans værker et par gange om
+          dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst
+          sælgende stock-fotografer, og han solgte over 2 millioner fotos om
+          året.
         </p>
-      </section>
-<section id="horizontal-section" class="h-[400vh] relative">
+      </div>
+      <div
+        class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+      >
+        <p class="mx-auto w-1/2">
+          Men Pierre kunne ikke drømme om at bruge sine egne fotos.
+        </p>
+      </div>
+    </section>
+    <section class="grid place-content-center p-10 pt-28">
+      <p>Faktisk kan han ikke fordrage sit eget arbejde...</p>
+    </section>
+    <section id="horizontal-section" class="h-[400vh] relative">
       <ul id="horizontal-list" class="list-none flex flex-col sticky top-0 ">
         <li class="h-[100vh] w-[100vw] items-start justify-center flex flex-col flex-shrink-0 flex-grow-0 overflow-hidden gap-7 px-6">
        <h2 class="text-3xl">En Skille<span id="glitch-font" class="skew-y-12">vej</span></h2>
@@ -81,8 +99,7 @@
         </li>
       </ul>
 </section>
-    </main>
-    <footer></footer>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>

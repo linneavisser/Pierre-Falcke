@@ -23,16 +23,12 @@ p {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
 }
+span#glitch-font {
+  font-family: "Rubik Glitch", cursive;
+}
 
 /* Sektionen omkring fotografen, med billedet af fotografen i baggrunden */
 .billedet_af_fotografen img {
   width: 30%;
   height: auto;
 }
-
-
-/* en skillevej */
-span#glitch-font{
-  font-family: "Rubik Glitch", cursive;
-}
-
