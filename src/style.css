@@ -18,7 +18,3 @@ p {
 }
 
 /* Sektionen omkring fotografen, med billedet af fotografen i baggrunden */
-.billedet_af_fotografen img {
-  width: 30%;
-  height: auto;
-}
