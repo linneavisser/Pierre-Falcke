@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h3 {
+  font-family: "Pontano Sans", sans-serif;
+}
+
+.hurtige_facts_overskrift {
+  color: #8c6464;
+}
+
+#hurtige_facts {
+  background-color: #ede6e0;
+  z-index: 2;
+}
+
+.hurtige_facts_li {
+  color: #8c6464;
+  z-index: 3;
+}
+
+.millioner {
+  top: calc(-25%);
+  right: calc(20%);
+  font-family: termina, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  opacity: 0.8;
+  color: #d9c3b0;
+  z-index: 1;
+}

@@ -4,11 +4,56 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/ywf4bou.css" />
     <title>Vite App</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
-  <body class="grid place-items-center p-8">
+  <body>
     <main>
-      <section></section>
+      <section
+        class="flex h-screen flex-col items-center justify-center"
+        id="hurtige_facts"
+      >
+        <article class="flex flex-col items-center justify-center gap-8">
+          <h3 class="hurtige_facts_overskrift text-3xl">Hurtige facts</h3>
+          <ul class="staggeranimation flex flex-col gap-20">
+            <li class="hurtige_facts_li relative text-lg">
+              Pierre sælger 2 millioner fotos om året.
+              <h4
+                class="millioner absolute text-4xl"
+                id="type_animation_millioner"
+              >
+                2 millioner
+              </h4>
+            </li>
+
+            <li class="hurtige_facts_li relative text-lg">
+              Det svarer til én fotolicens hvert 16. sekund.
+              <h4
+                class="millioner absolute text-4xl"
+                id="type_animation_sekund"
+              >
+                16. sekund.
+              </h4>
+            </li>
+            <li class="hurtige_facts_li relative text-lg">
+              Du ser hans fotos ca. 2 gange om dagen.
+              <h4
+                class="millioner absolute text-4xl"
+                id="type_animation_2_gange"
+              >
+                2 gange.
+              </h4>
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
