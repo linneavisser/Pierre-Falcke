@@ -2,9 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-@layer components{
-  h2{
+@layer components {
+  h2 {
     font-family: "Rubik", sans-serif;
     font-weight: 300;
   }
@@ -31,4 +30,22 @@ span#glitch-font {
 .billedet_af_fotografen img {
   width: 30%;
   height: auto;
+}
+
+/* Sektionen om bogen lidt i fem */
+#parent_element_bog_sektion {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1_baggrund_bog {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.billedet_af_bogen {
+  position: absolute;
+  top: 30%;
 }
