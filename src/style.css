@@ -356,3 +356,9 @@ video {
       0 0 100px rgba(255, 255, 255, 0.1);
   }
 }
+
+/*men pierre*/
+.img_gul_streg {
+  bottom: calc(-300%);
+  right: calc(10%);
+}

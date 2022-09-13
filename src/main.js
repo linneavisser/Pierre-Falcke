@@ -71,3 +71,25 @@ document
       target: elementderskalparallaxes2,
     });
   });
+
+//en ny begyndelse video parallax
+document
+  .querySelectorAll(".parallaxcontainer_en_ny_begyndelse_video")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".en_ny_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-100, 150] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
+
+//men pierre parallax
+document
+  .querySelectorAll(".parallaxcontainer_men_pierre")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".men_pierre_para");
+    scroll(animate(elementderskalparallaxes2, { y: [50, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
