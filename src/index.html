@@ -23,51 +23,67 @@
     <!--Brødtekst font type SLUT-->
   </head>
   <body>
-  <main class="overflow-clip">
+    <main class="overflow-clip">
       <section class="grid place-content-center pt-96">
-        <h1 id="kunstig_h1" class="pb-1 text-4xl tracking-widest text-gray-300">
+        <h1
+          id="kunstig_h1"
+          class="pb-1 text-4xl tracking-widest text-gray-300 lg:text-9xl"
+        >
           Fra Kunstig
         </h1>
         <div class="flex flex-row gap-6">
-          <p class="p-1 text-gray-300">til</p>
-          <div id="kunstner_h1" class="text-4xl tracking-wider text-amber-500">
+          <p class="p-1 text-gray-300 lg:text-9xl">til</p>
+          <div
+            id="kunstner_h1"
+            class="text-4xl tracking-wider text-amber-500 lg:text-9xl"
+          >
             <h1>Kunstner.</h1>
           </div>
         </div>
-        <p class="pt-2 text-xs text-gray-200">
-          En kort fortælling om fotografen Pierre Falcke
-        </p>
+        <div class="grid place-content-center">
+          <p class="pt-2 text-xs text-gray-200 lg:text-3xl">
+            En kort fortælling om fotografen Pierre Falcke
+          </p>
+        </div>
       </section>
       <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer-->
       <section class="zoom_me">
         <img src="camera_3.svg" alt="kamera_scroll" />
       </section>
-  
+
       <!--Scroll effekten med fotografens billed i baggrunden-->
-      <section>
+      <section class="grid-flow-col-2 grid place-content-center">
         <div
           class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
         >
-          <h1 class="mx-auto w-1/2 text-4xl">Pierre Falcke.</h1>
+          <h1 class="mx-auto text-4xl sm:w-1/2 lg:text-6xl">Pierre Falcke.</h1>
         </div>
         <div
           class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
         >
-          <p class="mx-auto w-1/2">Du ved formentligt ikke hvem han er.</p>
-        </div>
-        <div
-          class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
-        >
-          <p class="mx-auto w-1/2">
-            Men indtil for kort tid siden, så du hans værker et par gange om
-            dagen, hver dag, året rundt. Pierre Falcke var en af verdens bedst
-            sælgende stock-fotografer, og han solgte over 2 millioner fotos om
-            året.
+          <p class="mx-auto text-lg sm:w-1/2">
+            Du ved formentligt ikke hvem han er.
           </p>
         </div>
         <div
-          class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat">
-          <p class="mx-auto w-1/2">
+          class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+        >
+          <p class="mx-auto text-lg sm:w-1/2">
+            Men indtil for kort tid siden, så du hans værker et par gange om
+            dagen, hver dag, året rundt.
+          </p>
+        </div>
+        <div
+          class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+        >
+          <p class="mx-auto text-lg sm:w-1/2">
+            Pierre Falcke var en af verdens bedst sælgende stock-fotografer.
+          </p>
+        </div>
+        <div
+          class="w-100 sticky top-0 flex h-screen items-center bg-[url('fotograf_pierre_f.png')] bg-cover bg-fixed bg-center bg-no-repeat"
+        >
+          <p class="mx-auto text-lg sm:w-1/2">
             Men Pierre kunne ikke drømme om at bruge sine egne fotos.
           </p>
         </div>
@@ -76,70 +92,142 @@
         <p>Faktisk kan han ikke fordrage sit eget arbejde...</p>
       </section>
       <!-- HORISONTAL SECTION -->
-      <section id="horizontal-section" class="h-[400vh] relative">
-        <ul id="horizontal-list" class="list-none flex flex-row sticky top-0 snap-mandatory snap-x">
-          <li class="h-[100vh] w-[100vw] items-start justify-center flex flex-col flex-shrink-0 flex-grow-0 overflow-hidden gap-7 px-6 bg-[url('noise-right.png')] bg-right bg-no-repeat">
-         <div class="flex flex-col gap-7 snap-center md:px-56">
-           <h2 class="text-3xl md:text-6xl bg-white">En Skille<span class="glitch-font skew-y-12">vej</span></h2>
-           <p class="bg-white">Pierre tjente godt det følgende årti. Men stille og roligt begyndte billederne også at give ham kvalme.</p>
-         </div>
-         <!-- <div class="absolute bottom-0"><img src="skillevej.svg" alt="sign" class="w-36 h-auto .wobble-hor-bottom:hover"></div> -->
+      <section id="horizontal-section" class="relative h-[400vh]">
+        <ul
+          id="horizontal-list"
+          class="sticky top-0 flex snap-x snap-mandatory list-none flex-row"
+        >
+          <li
+            class="flex h-[100vh] w-[100vw] flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden bg-[url('noise-right.png')] bg-right bg-no-repeat px-6"
+          >
+            <div class="flex snap-center flex-col gap-7 md:px-56">
+              <h2 class="bg-white text-3xl md:text-6xl">
+                En Skille<span class="glitch-font skew-y-12">vej</span>
+              </h2>
+              <p class="bg-white">
+                Pierre tjente godt det følgende årti. Men stille og roligt
+                begyndte billederne også at give ham kvalme.
+              </p>
+            </div>
+            <!-- <div class="absolute bottom-0"><img src="skillevej.svg" alt="sign" class="w-36 h-auto .wobble-hor-bottom:hover"></div> -->
           </li>
-          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto px-6 bg-[url('noise-left.png')] bg-left bg-no-repeat ">
+          <li
+            class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden bg-[url('noise-left.png')] bg-left bg-no-repeat px-6"
+          >
             <div class="snap-center md:px-60">
-              <p class="bg-white">Han kunne ikke holde sit eget arbejde ud, og måtte finde et modsvar til alle de blankpolerede fotos. Noget han kunne lave med stolthed. 
-              <br> Pierre bestluttede sig for at droppe stock-fotos, og vende tilbage til <span class="glitch-font">rødderne.</span>  </p>
+              <p class="bg-white">
+                Han kunne ikke holde sit eget arbejde ud, og måtte finde et
+                modsvar til alle de blankpolerede fotos. Noget han kunne lave
+                med stolthed. <br />
+                Pierre bestluttede sig for at droppe stock-fotos, og vende
+                tilbage til <span class="glitch-font">rødderne.</span>
+              </p>
             </div>
           </li>
-          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto gap-7 px-6">
-          <div class="flex flex-col gap-7 md:px-60 snap-center pt-40">
-              <p class="text-center">Han søgte inspiration i analog fotografering, i Lomo-bevægelsen, Glitch art og polaroid fotografering, og begyndte stille og roligt at skabe sig en ny stil - en stil med fokus på det uperfekte, og hvor der er et uforudsigeligt element i det at tage billeder. </p>
-             <div class="flex gap-5 justify-evenly">
-                <img src="filmfoto.webp" alt="analog foto" class="rounded-full w-36 h-36 shrink-0 grow-0 mb-2 opacity-60 hover:opacity-100 hover:cursor-pointer">
-                <img src="glitch.webp" alt="glitch foto" class="rounded-full w-36 h-36 shrink-0 grow-0 mb-2 opacity-60 hover:opacity-100 hover:cursor-pointer">
-                <img src="lomo-smena-17.webp" alt="lomo foto" class="rounded-full w-36 h-36 shrink-0 grow-0 mb-2 opacity-60 hover:opacity-100 hover:cursor-pointer">
-             </div>
-          </div>
+          <li
+            class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden px-6"
+          >
+            <div class="flex snap-center flex-col gap-7 pt-40 md:px-60">
+              <p class="text-center">
+                Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
+                Glitch art og polaroid fotografering, og begyndte stille og
+                roligt at skabe sig en ny stil - en stil med fokus på det
+                uperfekte, og hvor der er et uforudsigeligt element i det at
+                tage billeder.
+              </p>
+              <div class="flex justify-evenly gap-5">
+                <img
+                  src="filmfoto.webp"
+                  alt="analog foto"
+                  class="mb-2 h-36 w-36 shrink-0 grow-0 rounded-full opacity-60 hover:cursor-pointer hover:opacity-100"
+                />
+                <img
+                  src="glitch.webp"
+                  alt="glitch foto"
+                  class="mb-2 h-36 w-36 shrink-0 grow-0 rounded-full opacity-60 hover:cursor-pointer hover:opacity-100"
+                />
+                <img
+                  src="lomo-smena-17.webp"
+                  alt="lomo foto"
+                  class="mb-2 h-36 w-36 shrink-0 grow-0 rounded-full opacity-60 hover:cursor-pointer hover:opacity-100"
+                />
+              </div>
+            </div>
           </li>
-          <li class="flex h-[100vh] w-[100vw] items-start justify-center flex-col overflow-hidden flex-grow-0 flex-shrink-0 flex-auto px-6 bg-[url('noise-bottom.png')]">
-            <div class="md:px-60 snap-center">
-              <p class="bg-white">Pierre tog det endda så vidt at han ikke kun droppede at tage stock-fotos. Han fjernede også alle stock-fotos fra de tjenester, han solgte sine fotos hos.
-                <br> Han gik fra at være en god forretningsdrivende til at blive en vaskeægte boheme-type på rekordtid.</p>
+          <li
+            class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden bg-[url('noise-bottom.png')] px-6"
+          >
+            <div class="snap-center md:px-60">
+              <p class="bg-white">
+                Pierre tog det endda så vidt at han ikke kun droppede at tage
+                stock-fotos. Han fjernede også alle stock-fotos fra de
+                tjenester, han solgte sine fotos hos. <br />
+                Han gik fra at være en god forretningsdrivende til at blive en
+                vaskeægte boheme-type på rekordtid.
+              </p>
             </div>
           </li>
         </ul>
-  </section>
-    <!--Sektionen med bogen lidt i fem-->
-    <section id="parent_element_bog_sektion" class="pb-40">
-      <img
-        class="image1_baggrund_bog"
-        src="lidt_i_fem_baggrund.svg"
-        alt="lidt i fem grafik som baggrund"
-      />
-      <img
-        class="billedet_af_bogen"
-        src="bog_lidt_i5_.webp"
-        alt="billedet af bogen lidt i fem"
-      />
-    </section>
-    <!--Sektionen med preview af billederne fra bogen-->
-    <section
-      class="flex flex-wrap place-content-center gap-10 bg-[url('5_.svg')] bg-repeat"
-    >
-      <img
-        class="w-80"
-        src="ikke_hjem.webp"
-        alt="billedet fra Roskilde Festival"
-      />
-      <img class="w-80" src="mcd.webp" alt="MacD billedet" />
-      <img class="w-80" src="bil.webp" alt="biledet af en kvinde og en bil" />
-    </section>
-    <div
-      class="bg-no repeat grid place-content-center bg-[url('background_thing.svg')] p-10"
-    >
-      <p class="p-10">Som Pierre forklarer det:</p>
-    </div>
-  </main>
+      </section>
+      <!--Sektionen med bogen lidt i fem-->
+      <section id="parent_element_bog_sektion">
+        <div>
+          <img
+            class="image1_baggrund_bog grid-flow-col-2 grid place-content-center"
+            src="lidt_i_fem_baggrund.svg"
+            alt="lidt i fem
+          grafik som baggrund"
+          />
+        </div>
+        <img
+          class="billedet_af_bogen"
+          src="bog_lidt_i5_.webp"
+          alt="billedet af bogen lidt i fem"
+        />
+      </section>
+      <!--Sektionen med preview af billederne fra bogen-->
+      <section
+        class="flex flex-wrap place-content-center gap-10 bg-[url('5_.svg')] bg-repeat pb-20"
+      >
+        <img
+          class="w-80"
+          src="ikke_hjem.webp"
+          alt="billedet fra Roskilde Festival"
+        />
+        <img class="w-80" src="mcd.webp" alt="MacD billedet" />
+        <img class="w-80" src="bil.webp" alt="biledet af en kvinde og en bil" />
+      </section>
+      <div
+        class="grid place-content-center bg-[url('background_thing.svg')] bg-center bg-no-repeat p-10"
+      >
+        <p class="p-10">Som Pierre forklarer det:</p>
+      </div>
+      <!--______________Sektionen med det sidste quote i sort og hvid___________-->
+      <section id="parent_element_quote2">
+        <div>
+          <img
+            class="baggrund_sort_hvid"
+            src="foto_B_W.webp"
+            alt="sort og hvid billede som baggrund"
+          />
+        </div>
+        <div class="grid place-items-center">
+          <p
+            class="quote_nummer_2 bg-slate-100 p-4 opacity-40 sm:w-52 lg:w-96 lg:text-4xl"
+          >
+            Nu kan jeg leve livet igen. Jeg føler mig frisk. Jeg føler mig fri.
+            Jeg føler mig genfødt.
+          </p>
+        </div>
+        <div>
+          <img
+            class="citation_2"
+            src="quote_2.svg"
+            alt="citationstegn nummer 2"
+          />
+        </div>
+      </section>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
