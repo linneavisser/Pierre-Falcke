@@ -8,7 +8,7 @@
     font-weight: 300;
   }
 }
-@layer components {
+@layer components{
   .wobble-hor-bottom:hover {
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
@@ -24,10 +24,6 @@
   font-weight: 300;
 }
 
-p {
-  font-family: "Rubik", sans-serif;
-  font-weight: 300;
-}
 span.glitch-font {
   font-family: "Rubik Glitch", cursive;
 }
@@ -55,6 +51,30 @@ span.glitch-font {
   position: absolute;
   top: 30%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* KEYFRAMES */
 /* ----------------------------------------------
