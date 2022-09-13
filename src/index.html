@@ -77,39 +77,47 @@
       <section class="grid place-content-center p-10 pt-28">
         <p>Faktisk kan han ikke fordrage sit eget arbejde...</p>
       </section>
+      <!-- HUTIGE FACTS SECTION -->
       <section
-        class="flex h-screen flex-col items-center justify-center"
+        class="parallaxcontainer_hurtige_facts flex flex-col items-center justify-center"
         id="hurtige_facts"
       >
-        <article class="flex flex-col items-center justify-center gap-8">
-          <h3 class="hurtige_facts_overskrift text-3xl">Hurtige facts</h3>
+        <article
+          class="hurtig_para flex flex-col items-center justify-center gap-8"
+        >
+          <h3 class="staggeranimation hurtige_facts_overskrift mb-7 text-5xl">
+            Hurtige facts
+          </h3>
           <ul
-            class="staggeranimation relative flex w-96 flex-col items-center justify-center gap-20 outline"
+            class="li_container flex w-96 flex-col items-center justify-center gap-20"
           >
-            <h4
-              class="millioner absolute text-5xl"
-              id="type_animation_millioner"
-            >
-              2 millioner
-            </h4>
-            <li class="hurtige_facts_li text-lg">
-              Pierre sælger 2 millioner fotos om året.
-            </li>
-            <h4 class="millioner absolute text-4xl" id="type_animation_sekund">
-              16. sekund.
-            </h4>
-            <li class="hurtige_facts_li relative text-lg">
-              Det svarer til én fotolicens hvert 16. sekund.
-            </li>
-            <li class="hurtige_facts_li relative text-lg">
-              Du ser hans fotos ca. 2 gange om dagen.
+            <div class="million_div relative">
+              <li class="staggeranimation hurtige_facts_li relative text-lg">
+                Pierre sælger 2 millioner fotos om året.
+              </li>
               <h4
-                class="millioner absolute text-4xl"
+                class="staggeranimation absolute text-5xl"
+                id="type_animation_millioner"
+              ></h4>
+            </div>
+            <div class="sekund_div relative">
+              <li class="staggeranimation hurtige_facts_li relative text-lg">
+                Det svarer til én fotolicens hvert 16. sekund.
+              </li>
+              <h4
+                class="staggeranimation absolute text-5xl"
+                id="type_animation_sekund"
+              ></h4>
+            </div>
+            <div class="to_gange_div relative">
+              <li class="staggeranimation hurtige_facts_li relative text-lg">
+                Du ser hans fotos ca. 2 gange om dagen.
+              </li>
+              <h4
+                class="staggeranimation absolute text-5xl"
                 id="type_animation_2_gange"
-              >
-                2 gange.
-              </h4>
-            </li>
+              ></h4>
+            </div>
           </ul>
         </article>
       </section>
@@ -190,6 +198,15 @@
             </div>
           </li>
         </ul>
+      </section>
+      <!-- EN NY BEGYNDELSE SECTION -->
+      <section class="en_ny_begyndelse">
+        <article class="relative">
+          <video autoplay loop muted src="eksperimentel-video.mp4"></video>
+          <h2 class="text-flicker-in-glow absolute text-3xl text-white">
+            En ny begyndelse
+          </h2>
+        </article>
       </section>
       <!--Sektionen med bogen lidt i fem-->
       <section id="parent_element_bog_sektion" class="pb-40">

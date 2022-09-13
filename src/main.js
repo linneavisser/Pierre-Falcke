@@ -27,14 +27,16 @@ scroll(
   { target: document.querySelector("#horizontal-section") }
 );
 
-animate(
-  ".staggeranimation li",
-  { opacity: [0, 1] },
-  {
-    delay: stagger(1, { start: 2 }),
-  }
-);
+//hurtige facts staggeranimation
+inView(".staggeranimation", () => {
+  animate(
+    ".staggeranimation",
+    { opacity: [0, 1] },
+    { duration: 2, delay: stagger(1, { start: 0.5 }) }
+  );
+});
 
+//hurtige facts typewriter effect
 var app = document.getElementById("type_animation_millioner");
 
 var typewriter = new Typewriter(app, {
@@ -58,3 +60,14 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter.typeString("2 gange").pauseFor(8000).deleteAll().start();
+
+//hurtige facts parallax
+document
+  .querySelectorAll(".parallaxcontainer_hurtige_facts")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".hurtig_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-100, 150] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
