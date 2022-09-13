@@ -15,10 +15,10 @@
     font-weight: 300;
   }
 }
-@layer components{
+@layer components {
   .wobble-hor-bottom:hover {
     -webkit-animation: wobble-hor-bottom 0.8s both;
-            animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
   }
 }
 /* Glitch font type */
@@ -75,8 +75,8 @@ span.glitch-font {
 }
 
 .millioner {
-  top: calc(-25%);
-  right: calc(20%);
+  top: calc(-5%);
+  right: calc(10%);
   font-family: termina, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -84,28 +84,6 @@ span.glitch-font {
   color: #d9c3b0;
   z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* KEYFRAMES */
 /* ----------------------------------------------
@@ -120,61 +98,61 @@ span.glitch-font {
  * animation wobble-hor-bottom
  * ----------------------------------------
  */
- @-webkit-keyframes wobble-hor-bottom {
+@-webkit-keyframes wobble-hor-bottom {
   0%,
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   15% {
     -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
   }
   30% {
     -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
   }
   45% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
   }
   60% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
   }
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
 @keyframes wobble-hor-bottom {
   0%,
   100% {
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
     -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
   }
   15% {
     -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
   }
   30% {
     -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
   }
   45% {
     -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
   }
   60% {
     -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
   }
   75% {
     -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }

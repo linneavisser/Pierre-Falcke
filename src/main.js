@@ -21,11 +21,11 @@ document
 
 const items = document.querySelectorAll("#horizontal-list li");
 scroll(
-   animate("#horizontal-list", {
-     transform: ["none", `translateX(-${items.length - 1}00vw)`]
-   }),
-   { target: document.querySelector("#horizontal-section") }
- );
+  animate("#horizontal-list", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horizontal-section") }
+);
 
 animate(
   ".staggeranimation li",
