@@ -1,6 +1,6 @@
 import "./style.css";
 /* Import af Motion One bibliotek */
-import { animate, stagger, inView, scroll, timeline } from "motion";
+import { animate, stagger, glide, inView, scroll, timeline } from "motion";
 
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
@@ -18,7 +18,6 @@ document
       target: elementderskalparallaxes2,
     });
   });
-
 
 // HORISONTAL
 const items = document.querySelectorAll("#horizontal-list li");
@@ -95,3 +94,5 @@ document
       target: elementderskalparallaxes2,
     });
   });
+
+/* animation af billedgalleri */

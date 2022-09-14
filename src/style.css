@@ -53,29 +53,29 @@ span.glitch-font {
 }
 
 /* Hurtige facts */
- 
+
 .hurtige_facts_overskrift {
- color: #8c6464;
+  color: #8c6464;
 }
- 
+
 #hurtige_facts {
   background-color: #ede6e0;
   height: 100vh;
 }
- 
+
 .hurtige_facts_li {
- color: #8c6464;
- z-index: 3;
+  color: #8c6464;
+  z-index: 3;
 }
- 
+
 .millioner {
- top: calc(-25%);
- right: calc(20%);
- font-family: termina, sans-serif;
- font-weight: 700;
- font-style: normal;
- opacity: 0.8;
- color: #d9c3b0;
+  top: calc(-25%);
+  right: calc(20%);
+  font-family: termina, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  opacity: 0.8;
+  color: #d9c3b0;
   color: #8c6464;
   z-index: 4;
 }
@@ -388,3 +388,5 @@ video {
   position: absolute;
   top: 50%;
 }
+
+/* billed galleri */
