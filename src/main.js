@@ -19,7 +19,6 @@ document
     });
   });
 
-
 // HORISONTAL
 const items = document.querySelectorAll("#horizontal-list li");
 scroll(
@@ -91,7 +90,19 @@ document
   .forEach((parallaxcontainer) => {
     const elementderskalparallaxes2 =
       parallaxcontainer.querySelector(".men_pierre_para");
-    scroll(animate(elementderskalparallaxes2, { y: [50, 500] }), {
+    scroll(animate(elementderskalparallaxes2, { y: [-200, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
+
+// det interessandte parallax
+document
+  .querySelectorAll(".parallaxcontainer_det_interessandte")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 = parallaxcontainer.querySelector(
+      ".det_interessandte_para"
+    );
+    scroll(animate(elementderskalparallaxes2, { y: [-150, 200] }), {
       target: elementderskalparallaxes2,
     });
   });
