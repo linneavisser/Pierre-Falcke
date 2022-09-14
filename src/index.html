@@ -20,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <!--Brødtekst font type SLUT-->
   </head>
   <body class="scroll-smooth">
@@ -91,41 +92,46 @@
       <section class="grid place-content-center p-10 pt-28">
         <p>Faktisk kan han ikke fordrage sit eget arbejde...</p>
       </section>
-      <section
-      class="flex h-screen flex-col items-center justify-center"
+      <!-- HUTIGE FACTS SECTION -->
+      class="parallaxcontainer_hurtige_facts flex flex-col items-center justify-center"
       id="hurtige_facts"
     >
-      <article class="flex flex-col items-center justify-center gap-8">
-        <h3 class="hurtige_facts_overskrift text-3xl">Hurtige facts</h3>
-        <ul class="staggeranimation flex flex-col gap-20">
-          <li class="hurtige_facts_li relative text-lg">
-            Pierre sælger 2 millioner fotos om året.
+      <article
+        class="hurtig_para flex flex-col items-center justify-center gap-8"
+      >
+        <h3 class="staggeranimation hurtige_facts_overskrift mb-7 text-5xl">
+          Hurtige facts
+        </h3>
+        <ul
+          class="li_container flex w-96 flex-col items-center justify-center gap-20"
+        >
+          <div class="million_div relative">
+            <li class="staggeranimation hurtige_facts_li relative text-lg">
+              Pierre sælger 2 millioner fotos om året.
+            </li>
             <h4
-              class="millioner absolute text-4xl -z-10"
+              class="staggeranimation absolute text-5xl"
               id="type_animation_millioner"
-            >
-              2 millioner
-            </h4>
-          </li>
-
-          <li class="hurtige_facts_li relative text-lg">
-            Det svarer til én fotolicens hvert 16. sekund.
+            ></h4>
+          </div>
+          <div class="sekund_div relative">
+            <li class="staggeranimation hurtige_facts_li relative text-lg">
+              Det svarer til én fotolicens hvert 16. sekund.
+            </li>
             <h4
-              class="millioner absolute text-4xl -z-10"
+              class="staggeranimation absolute text-5xl"
               id="type_animation_sekund"
-            >
-              16. sekund.
-            </h4>
-          </li>
-          <li class="hurtige_facts_li relative text-lg">
-            Du ser hans fotos ca. 2 gange om dagen.
+            ></h4>
+          </div>
+          <div class="to_gange_div relative">
+            <li class="staggeranimation hurtige_facts_li relative text-lg">
+              Du ser hans fotos ca. 2 gange om dagen.
+            </li>
             <h4
-              class="millioner absolute text-4xl -z-10"
+              class="staggeranimation absolute text-5xl"
               id="type_animation_2_gange"
-            >
-              2 gange.
-            </h4>
-          </li>
+            ></h4>
+          </div>
         </ul>
       </article>
     </section>
@@ -145,6 +151,7 @@
     
     </section>
 
+   
       <!-- HORISONTAL SECTION -->
       <section id="horizontal-section" class="relative h-[400vh]">
         <ul
@@ -163,7 +170,7 @@
                 begyndte billederne også at give ham kvalme.
               </p>
             </div>
-            <div class="absolute bottom-0 -rotate-12 hover:cursor-pointer"><img src="skillevej.svg" alt="sign" class="w-36 h-auto .wobble-hor-bottom:hover"></div>
+            <!-- <div class="absolute bottom-0"><img src="skillevej.svg" alt="sign" class="w-36 h-auto .wobble-hor-bottom:hover"></div> -->
           </li>
           <li
             class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden bg-[url('noise-left.png')] bg-left bg-no-repeat px-6"
@@ -233,6 +240,48 @@
           grafik som baggrund"
           />
         </div>
+      <!-- EN NY BEGYNDELSE SECTION -->
+      <section
+        class="en_ny_begyndelse parallaxcontainer_en_ny_begyndelse_video"
+      >
+        <article class="relative">
+          <video autoplay loop muted src="eksperimentel-video.mp4"></video>
+          <h2
+            class="text-flicker-in-glow en_ny_para absolute text-3xl text-white"
+          >
+            En ny begyndelse
+          </h2>
+        </article>
+      </section>
+      <section class="parallaxcontainer_men_pierre">
+        <article class="flex h-screen flex-col items-center justify-center">
+          <div class="men_pierre_para">
+            <img
+              src="gul_streg.svg"
+              alt="gul streg"
+              class="img_gul_streg absolute"
+            />
+            <p class="relative">Men Pierre er glad for sin beslutning</p>
+          </div>
+        </article>
+      </section>
+      <section class="parallaxcontainer_men_pierre">
+        <article class="flex h-screen flex-col items-center justify-center">
+          <p class="men_pierre_para w-64">
+            Indkomsten er lavere nu, men han har stadig lidt penge på kontoen,
+            og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han
+            glæder sig over hver dags kunstneriske eksperimenter, og er for
+            første gang i sit liv rigtig stolt af sit arbejde.
+          </p>
+        </article>
+      </section>
+      <!--Sektionen med bogen lidt i fem-->
+      <section id="parent_element_bog_sektion" class="pb-40">
+        <img
+          class="image1_baggrund_bog"
+          src="lidt_i_fem_baggrund.svg"
+          alt="lidt i fem grafik som baggrund"
+        />
         <img
           class="billedet_af_bogen"
           src="bog_lidt_i5_.webp"
@@ -241,7 +290,7 @@
       </section>
       <!--Sektionen med preview af billederne fra bogen-->
       <section
-        class="flex flex-wrap place-content-center gap-10 bg-[url('5_.svg')] bg-repeat pb-20"
+        class="flex flex-wrap place-content-center gap-10 bg-[url('5_.svg')] bg-repeat"
       >
         <img
           class="w-80"

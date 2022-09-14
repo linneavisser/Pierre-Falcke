@@ -23,23 +23,22 @@ document
 // HORISONTAL
 const items = document.querySelectorAll("#horizontal-list li");
 scroll(
-   animate("#horizontal-list", {
-     transform: ["none", `translateX(-${items.length - 1}00vw)`]
-   }),
-   { target: document.querySelector("#horizontal-section") }
- );
-
-
-//
-
-animate(
-  ".staggeranimation li",
-  { opacity: [0, 1] },
-  {
-    delay: stagger(1, { start: 2 }),
-  }
+  animate("#horizontal-list", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horizontal-section") }
 );
 
+//hurtige facts staggeranimation
+inView(".staggeranimation", () => {
+  animate(
+    ".staggeranimation",
+    { opacity: [0, 1] },
+    { duration: 2, delay: stagger(1, { start: 0.5 }) }
+  );
+});
+
+//hurtige facts typewriter effect
 var app = document.getElementById("type_animation_millioner");
 
 var typewriter = new Typewriter(app, {
@@ -64,21 +63,35 @@ var typewriter = new Typewriter(app, {
 
 typewriter.typeString("2 gange").pauseFor(8000).deleteAll().start();
 
+//hurtige facts parallax
+document
+  .querySelectorAll(".parallaxcontainer_hurtige_facts")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".hurtig_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-100, 150] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
 
+//en ny begyndelse video parallax
+document
+  .querySelectorAll(".parallaxcontainer_en_ny_begyndelse_video")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".en_ny_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-100, 150] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// STOCK-FOTO SECTION
+//men pierre parallax
+document
+  .querySelectorAll(".parallaxcontainer_men_pierre")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".men_pierre_para");
+    scroll(animate(elementderskalparallaxes2, { y: [50, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
