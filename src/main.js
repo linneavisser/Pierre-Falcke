@@ -95,3 +95,45 @@ document
       target: elementderskalparallaxes2,
     });
   });
+
+
+
+
+
+const mediaQuery = window.matchMedia("(min-width: 1024px)");
+
+
+document.querySelectorAll(".stockParallax").forEach(( parallaxcontainer ) => {
+  const stocktextsparallax = parallaxcontainer.querySelector("p");
+  scroll(animate(stocktextsparallax, { y: [10, 300] }), {
+    target: stocktextsparallax
+  });
+});
+
+
+if (mediaQuery.matches) {document.querySelectorAll(".stockFotos").forEach(( parallaxcontainer ) => {
+  const stocktextsparallax = parallaxcontainer.querySelector("img");
+  scroll(animate(stocktextsparallax, { y: [300, -10] }), {
+    target: stocktextsparallax
+  });
+});
+}
+
+
+
+// if (mediaQuery.matches) {
+//   scrollDesk();
+// }
+
+// function scrollDesk() {
+//   window.addEventListener("scroll", function () {
+//     const target = this.document.querySelector(".stockText");
+//     console.log(window.pageYOffset);
+//     var scrolled = window.pageYOffset;
+//     var rate = scrolled * -0.5;
+//     target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
+//   });
+// }
+// if (inView)
+// {scrollDesk();
+// }
