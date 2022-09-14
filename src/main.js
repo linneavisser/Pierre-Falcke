@@ -82,15 +82,3 @@ typewriter.typeString("2 gange").pauseFor(8000).deleteAll().start();
 
 
 // STOCK-FOTO SECTION
-
-// inView( ".fotogalleryinview" , ({ target }) =>{
-//   animate( target.querySelectorAll("img") , { x: [-2000, 0 ] }, 
-//   { duration: 1, delay: stagger(1, { start: 0.25 }) 
-//   })
-// })
-document.querySelectorAll(".fotogalleryinview > img").forEach((item) => {
-  scroll(animate(item, { opacity: [0, 1, 1, 0] }), {
-    target: item,
-    offset: ["start end", "end end", "start start", "end start"]
-  });
-});
