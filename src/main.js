@@ -148,6 +148,9 @@ document.querySelector("#lomoPic").addEventListener("click", showLomo);
 document.querySelector("#closeLomo").addEventListener("click", hideLomo);
 
 
+
+
+
 // if (mediaQuery.matches) {
 //   scrollDesk();
 // }
