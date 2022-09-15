@@ -125,7 +125,7 @@
         <article
           class="hurtig_para flex flex-col items-center justify-center gap-8"
         >
-          <ul>
+          <ul class="flex flex-col items-center justify-center gap-24">
             <div class="million_div relative">
               <li class="staggeranimation hurtige_facts_li relative text-lg">
                 Pierre sælger 2 millioner fotos om året.
@@ -220,11 +220,22 @@
 
       <!-- PIERRES BERØMMELSE -->
       <section
+        class="relative flex min-h-screen w-screen flex-col items-center justify-center"
+      >
+        <h3 class="berømmelse_h3">Pierres berømmelse</h3>
+        <video autoplay muted loop id="myVideo">
+          <source src="coins_final.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section
         class="flex min-h-screen w-screen flex-col items-center px-6 pt-60 leading-8"
       >
-        <h3 class="lg:text-5x pb-10 text-center text-3xl font-normal">
+        <!-- <h3 class="lg:text-5x pb-10 text-center text-3xl font-normal">
           Pierres berømmelse
         </h3>
+        <video autoplay muted loop id="myVideo">
+          <source src="coins.mp4" type="video/mp4" />
+        </video> -->
         <section class="h-screen md:flex md:gap-24 md:px-16">
           <section class="stockParallax h-30">
             <p class="mb-5">
@@ -287,7 +298,9 @@
           <li
             class="flex h-[100vh] w-[100vw] flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden"
           >
-          <div class="absolute opacity-10 right-0 w-full md:w-1/2"><img src="noise-right.svg" alt="background image"></div>
+            <div class="absolute right-0 w-full opacity-10 md:w-1/2">
+              <img src="noise-right.svg" alt="background image" />
+            </div>
             <div class="flex snap-center flex-col gap-7 md:px-56">
               <h3 class="bg-white text-3xl md:text-6xl">
                 En Skille<span class="glitch-font skew-y-12">vej</span>
@@ -302,7 +315,13 @@
           <li
             class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
           >
-          <div class="opacity-10"><img src="noise-left.svg" alt="background noise texture" class="h-screen"></div>
+            <div class="opacity-10">
+              <img
+                src="noise-left.svg"
+                alt="background noise texture"
+                class="h-screen"
+              />
+            </div>
             <div class="snap-center px-6 md:px-72">
               <p class="absolute bottom-[45%] md:bottom-1/2">
                 Han kunne ikke holde sit eget arbejde ud, og måtte finde et
@@ -365,10 +384,34 @@
                   id="glitchPic"
                   class="mb-2 h-24 w-24 shrink-0 grow-0 rounded-full opacity-60 hover:cursor-pointer hover:opacity-100 md:h-36 md:w-36"
                 />
-                <div id="glitchInfo" class="hidden absolute text-center bg-[url('glitch.webp')] bg-cover bg-no-repeat p-12 z-10 w-screen h-[80%] top-[20%] md:w-2/3 md:bg-center">
-                  <svg width="32" height="32" viewBox="0 0 21 21" id="closeGlitch" class="absolute right-4 top-1 hover:cursor-pointer"><path class="stroke-white" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10"/></svg>
-                  <p class="bg-[#ffffffb8] px-2">Når der sker en teknisk fejl i et medie/en kommunikationskanal kaldes det en glitch. Glitch art går ud på at dyrke fejlene for at skabe kunst. En meget typisk glitch er små analoge eller digitale fejl i farvegengivelsen af billeder.</p>
-                 </div>
+                <div
+                  id="glitchInfo"
+                  class="absolute top-[20%] z-10 hidden h-[80%] w-screen bg-[url('glitch.webp')] bg-cover bg-no-repeat p-12 text-center md:w-2/3 md:bg-center"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 21 21"
+                    id="closeGlitch"
+                    class="absolute right-4 top-1 hover:cursor-pointer"
+                  >
+                    <path
+                      class="stroke-white"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m15.5 15.5l-10-10zm0-10l-10 10"
+                    />
+                  </svg>
+                  <p class="bg-[#ffffffb8] px-2">
+                    Når der sker en teknisk fejl i et medie/en
+                    kommunikationskanal kaldes det en glitch. Glitch art går ud
+                    på at dyrke fejlene for at skabe kunst. En meget typisk
+                    glitch er små analoge eller digitale fejl i farvegengivelsen
+                    af billeder.
+                  </p>
+                </div>
                 <img
                   src="lomo-smena-17.webp"
                   alt="lomo foto"
@@ -407,7 +450,13 @@
           <li
             class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
           >
-          <div class="absolute opacity-10 bottom-0 w-full"><img src="noise-bottom.svg" alt="background image" class="h-full"></div>
+            <div class="absolute bottom-0 w-full opacity-10">
+              <img
+                src="noise-bottom.svg"
+                alt="background image"
+                class="h-full"
+              />
+            </div>
             <div class="snap-center md:px-60">
               <p class="absolute bottom-[42%] px-6">
                 Pierre tog det endda så vidt at han ikke kun droppede at tage
