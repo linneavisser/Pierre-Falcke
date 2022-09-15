@@ -95,58 +95,53 @@ document
     });
   });
 
-
 // parallax stock-fotos
-
 
 const mediaQuery = window.matchMedia("(min-width: 1024px)");
 
-
-document.querySelectorAll(".stockParallax").forEach(( parallaxcontainer ) => {
+document.querySelectorAll(".stockParallax").forEach((parallaxcontainer) => {
   const stocktextsparallax = parallaxcontainer.querySelector("p");
   scroll(animate(stocktextsparallax, { y: [10, 300] }), {
-    target: stocktextsparallax
+    target: stocktextsparallax,
   });
 });
 
-
-if (mediaQuery.matches) {document.querySelectorAll(".stockFotos").forEach(( parallaxcontainer ) => {
-  const stocktextsparallax = parallaxcontainer.querySelector("img");
-  scroll(animate(stocktextsparallax, { y: [200, 0] }), {
-    target: stocktextsparallax
+if (mediaQuery.matches) {
+  document.querySelectorAll(".stockFotos").forEach((parallaxcontainer) => {
+    const stocktextsparallax = parallaxcontainer.querySelector("img");
+    scroll(animate(stocktextsparallax, { y: [200, 0] }), {
+      target: stocktextsparallax,
+    });
   });
-});
 }
 
 //info bubblessssss
 
-function showAnalog(){
+function showAnalog() {
   document.querySelector("#analogInfo").classList.remove("hidden");
-  }
-function hideAnalog(){
-    document.querySelector("#analogInfo").classList.add("hidden");
-    }
-function showGlitch(){
-      document.querySelector("#glitchInfo").classList.remove("hidden");
-}     
-function hideGlitch(){
-        document.querySelector("#glitchInfo").classList.add("hidden");
-        }
-function showLomo(){
-          document.querySelector("#lomoInfo").classList.remove("hidden");
-    }     
-function hideLomo(){
-            document.querySelector("#lomoInfo").classList.add("hidden");
-            }
-            
+}
+function hideAnalog() {
+  document.querySelector("#analogInfo").classList.add("hidden");
+}
+function showGlitch() {
+  document.querySelector("#glitchInfo").classList.remove("hidden");
+}
+function hideGlitch() {
+  document.querySelector("#glitchInfo").classList.add("hidden");
+}
+function showLomo() {
+  document.querySelector("#lomoInfo").classList.remove("hidden");
+}
+function hideLomo() {
+  document.querySelector("#lomoInfo").classList.add("hidden");
+}
+
 document.querySelector("#analogPic").addEventListener("click", showAnalog);
 document.querySelector(".closeInfo").addEventListener("click", hideAnalog);
 document.querySelector("#glitchPic").addEventListener("click", showGlitch);
 document.querySelector("#closeGlitch").addEventListener("click", hideGlitch);
 document.querySelector("#lomoPic").addEventListener("click", showLomo);
 document.querySelector("#closeLomo").addEventListener("click", hideLomo);
-
-
 
 // førsøk til typewriter quote
 
@@ -176,7 +171,6 @@ document.querySelector("#closeLomo").addEventListener("click", hideLomo);
 // }
 /* animation af billederne af bogen */
 
-
 /* animation af billedgalleri */
 inView(".fotogalleryinview_1", ({ target }) => {
   animate(
@@ -198,7 +192,6 @@ inView(".fotogalleryinview_2", ({ target }) => {
 inView(".billedet_af_bogen", () => {
   animate(".billedet_af_bogen", { x: [-2000, 0] }, { duration: 1 });
 });
-
 
 // det interessandte parallax
 document
@@ -226,3 +219,37 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
+
+/* tekst stykket: som Pierre fortæller det */
+document
+  .querySelectorAll(".parallaxcontainer_som_pierre")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 = parallaxcontainer.querySelector(
+      ".pierre_fortaeller_para"
+    );
+    scroll(animate(elementderskalparallaxes2, { y: [-200, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
+
+/* tekst stykket: bestil Pierres bog */
+document
+  .querySelectorAll(".parallexcontainer_bestil_bogen")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".bestil_bogen_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-200, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
+
+/* billederne af lidt i fem preview*/
+document
+  .querySelectorAll(".parallaxcontainer_pics_lidt_i_fem")
+  .forEach((parallaxcontainer) => {
+    const elementderskalparallaxes2 =
+      parallaxcontainer.querySelector(".lidt_i_fem_para");
+    scroll(animate(elementderskalparallaxes2, { y: [-200, 500] }), {
+      target: elementderskalparallaxes2,
+    });
+  });
