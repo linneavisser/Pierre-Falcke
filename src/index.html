@@ -21,6 +21,19 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!--For at skabe en cursor hen over køb knappen-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            cursor: {
+              mincursor: "url(cursor.svg) 25 25, pointer",
+            },
+          },
+        },
+      };
+    </script>
     <!--Brødtekst font type SLUT-->
   </head>
   <body class="scroll-smooth">
@@ -340,7 +353,6 @@
         <img class="w-80" src="mcd.webp" alt="MacD billedet" />
         <img class="w-80" src="bil.webp" alt="biledet af en kvinde og en bil" />
       </section>
-      <!--_________________________________LAV EN KØB___________________________________-->
       <div
         class="grid place-content-center bg-[url('background_thing.svg')] bg-center bg-no-repeat p-10"
       >
@@ -380,8 +392,63 @@
         </p>
       </div>
       <!--Billed galleri scrolling horizontalt-->
+      <section>
+        <div class="fotogalleryinview_1 flex flex-wrap">
+          <img class="w-1/3 p-2" src="pic_1.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_2.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_7.webp" alt="" />
+        </div>
+        <div class="fotogalleryinview_2 flex flex-wrap place-content-center">
+          <img class="w-1/3 p-2" src="pic_9.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_4.webp" alt="" />
+        </div>
+      </section>
 
+      <!--____________________Køb pierres bog___________________-->
+      <section>
+        <div class="flex justify-center">
+          <p class="w-auto p-20">
+            Bestil bogen "Lidt i Fem" i dag og lad dig inspirere af Pierres
+            fotostil.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <button
+            id="køb_knap"
+            class="hover:cursor-mincursor w-40 rounded-md bg-white text-black hover:bg-black hover:text-orange-50"
+          >
+            KØB
+          </button>
+        </div>
+      </section>
     </main>
+    <footer class="h-1/2 bg-[url('footer_baggrund.svg')] pt-56">
+      <section class="flex flex-wrap justify-evenly sm:flex-wrap">
+        <div>
+          <h2 id="kontakt_h" class="p-2 text-4xl">Kontakt</h2>
+          <ul>
+            <li>Pierre Falcke</li>
+            <li>pierre@falcke.dk</li>
+            <li>11 22 33 44</li>
+          </ul>
+        </div>
+        <div>
+          <img
+            class="w-44 p-9"
+            src="logo_kamera.svg"
+            alt="logo til hjemmesiden"
+          />
+        </div>
+        <div>
+          <h2 id="credits_h" class="p-2 text-4xl">Credits</h2>
+          <ul>
+            <li>Linnéa Visser - koder & designer</li>
+            <li>Jonas Krogh - koder & designer</li>
+            <li>Nina Vergmann - koder & desginer</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

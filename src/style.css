@@ -389,4 +389,17 @@ video {
   top: 50%;
 }
 
-/* billed galleri */
+/* Styling til køb knappen*/
+#køb_knap {
+  font-family: "Rubik Glitch";
+  font-size: 3rem;
+}
+
+/* footer styling */
+#kontakt_h {
+  font-family: "Rubik Glitch";
+}
+
+#credits_h {
+  font-family: "Rubik Glitch";
+}

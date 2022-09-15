@@ -96,3 +96,23 @@ document
   });
 
 /* animation af billedgalleri */
+inView(".fotogalleryinview_1", ({ target }) => {
+  animate(
+    target.querySelectorAll("img"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
+
+inView(".fotogalleryinview_2", ({ target }) => {
+  animate(
+    target.querySelectorAll("img"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
+
+/* bogen kommer fra siden af*/
+inView(".billedet_af_bogen", () => {
+  animate(".billedet_af_bogen", { x: [-2000, 0] }, { duration: 1 });
+});
