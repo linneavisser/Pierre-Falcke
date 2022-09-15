@@ -537,21 +537,36 @@
       </section>
       <!--Sektionen med preview af billederne fra bogen-->
       <section
-        class="flex flex-wrap place-content-center gap-10 bg-[url('5_.svg')] bg-repeat"
+        class="parallaxcontainer_pics_lidt_i_fem bg-[url('5_.svg')] bg-contain"
       >
-        <img
-          class="w-80"
-          src="ikke_hjem.webp"
-          alt="billedet fra Roskilde Festival"
-        />
-        <img class="w-80" src="mcd.webp" alt="MacD billedet" />
-        <img class="w-80" src="bil.webp" alt="biledet af en kvinde og en bil" />
+        <div class="lidt_i_fem_para flex flex-wrap place-content-center gap-10">
+          <img
+            class="w-80"
+            src="ikke_hjem.webp"
+            alt="billedet fra Roskilde Festival"
+          />
+          <img class="w-80" src="mcd.webp" alt="MacD billedet" />
+          <img
+            class="w-80"
+            src="bil.webp"
+            alt="biledet af en kvinde og en bil"
+          />
+        </div>
       </section>
-      <div
-        class="grid place-content-center bg-[url('background_thing.svg')] bg-center bg-no-repeat p-10"
-      >
-        <p class="p-20">Som Pierre forklarer det:</p>
-      </div>
+      <section class="som_pierre_fortaeller parallaxcontainer_som_pierre p-40">
+        <article class="flex h-screen flex-col items-center justify-center">
+          <div class="pierre_fortaeller_para">
+            <p class="relative">
+              Som Pierre fortæller det:
+              <img
+                src="background_thing.svg"
+                alt="baggrund streg"
+                class="baggrundstreg absolute"
+              />
+            </p>
+          </div>
+        </article>
+      </section>
       <!--______________Sektionen med det sidste quote i sort og hvid___________-->
       <section id="parent_element_quote2">
         <div>
