@@ -60,11 +60,23 @@
           </p>
         </div>
       </section>
-      <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer-->
+      <!-- ZOOM effekt på kamera........ er i gang med at finde en kode der fungerer
       <section class="zoom_me">
         <img src="camera_3.svg" alt="kamera_scroll" />
+      </section>-->
+      <section class="zoom_effect sticky">
+        <div class="videocontainer sticky top-1 w-full">
+          <video
+            id="videofil"
+            class="w-full"
+            src="video_scrubbing2.mp4"
+            loop
+            muted
+            playsinline
+          ></video>
+        </div>
+        <div class="videoarticle h-screen"></div>
       </section>
-
       <!--Scroll effekten med fotografens billed i baggrunden-->
       <section class="grid-flow-col-2 grid place-content-center">
         <div
@@ -266,45 +278,34 @@
           </li>
         </ul>
       </section>
-      <!--Sektionen med bogen lidt i fem-->
-      <section id="parent_element_bog_sektion">
-        <div>
-          <img
-            class="image1_baggrund_bog grid-flow-col-2 grid place-content-center"
-            src="lidt_i_fem_baggrund.svg"
-            alt="lidt i fem
-          grafik som baggrund"
-          />
-        </div>
-      </section>
       <!-- EN NY BEGYNDELSE SECTION -->
       <section
         class="en_ny_begyndelse parallaxcontainer_en_ny_begyndelse_video"
       >
-        <article class="relative">
+        <article class="relative text-center">
           <video autoplay loop muted src="eksperimentel-video.mp4"></video>
-          <h2
-            class="text-flicker-in-glow en_ny_para absolute text-3xl text-white"
-          >
+          <h2 class="flicker-4 en_ny_para absolute text-3xl text-white">
             En ny begyndelse
           </h2>
         </article>
       </section>
-      <section class="parallaxcontainer_men_pierre">
+      <section class="men_pierre parallaxcontainer_men_pierre">
         <article class="flex h-screen flex-col items-center justify-center">
           <div class="men_pierre_para">
-            <img
-              src="gul_streg.svg"
-              alt="gul streg"
-              class="img_gul_streg absolute"
-            />
-            <p class="relative">Men Pierre er glad for sin beslutning</p>
+            <p class="relative">
+              Men Pierre er glad for sin beslutning
+              <img
+                src="gul_streg.svg"
+                alt="gul streg"
+                class="img_gul_streg absolute"
+              />
+            </p>
           </div>
         </article>
       </section>
-      <section class="parallaxcontainer_men_pierre">
+      <section class="men_pierre parallaxcontainer_men_pierre">
         <article class="flex h-screen flex-col items-center justify-center">
-          <p class="men_pierre_para w-64">
+          <p class="men_pierre_para w-3/4">
             Indkomsten er lavere nu, men han har stadig lidt penge på kontoen,
             og studerer nu kunstfotografering på fotoskolen Fatamorgana. Han
             glæder sig over hver dags kunstneriske eksperimenter, og er for
@@ -312,6 +313,51 @@
           </p>
         </article>
       </section>
+      <section class="parallaxcontainer_det_interessandte">
+        <article class="flex flex-col items-center justify-center">
+          <div class="det_interessandte relative">
+            <img
+              class="aspect-[17/19] w-screen object-cover"
+              src="lomo-smena(1).webp"
+              alt="lomobillede af byen"
+            />
+
+            <p
+              class="det_interessandte_para leading-auto text-md absolute bg-[#d9d9d9be] p-5 font-light"
+            >
+              Det interessante ligger i fejlen. Et foto med masser af fejl er
+              interessant. Jeg eksperimenterer med udstyr og teknik, og skaber
+              nye visuelle udtryk. Det uperfekte er perfekt.
+              <img
+                class="quote_3 absolute"
+                src="quote_3.svg"
+                alt="quote-image"
+              />
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="karrieren parallaxcontainer_men_pierre">
+        <article class="flex h-screen flex-col items-center justify-center">
+          <p
+            class="men_pierre_para flex w-3/4 flex-col items-center justify-center"
+          >
+            Karrieren begynder også så småt at gå den rette vej:
+          </p>
+        </article>
+      </section>
+      <section class="fotokunst parallaxcontainer_men_pierre">
+        <article class="flex h-screen flex-col items-center justify-center">
+          <p class="men_pierre_para w-3/4">
+            Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin
+            første foto-bog med titlen “Lidt i fem,” som er en fotografisk
+            odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I
+            forbindelse med udgivelsen af bogen, har han en udstilling på vej i
+            det Kongelige Biblioteks fotoudstilling.
+          </p>
+        </article>
+      </section>
+
       <!--Sektionen med bogen lidt i fem-->
       <section id="parent_element_bog_sektion">
         <img
