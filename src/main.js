@@ -95,6 +95,9 @@ document
     });
   });
 
+/* animation af billederne af bogen */
+
+
 /* animation af billedgalleri */
 inView(".fotogalleryinview_1", ({ target }) => {
   animate(
@@ -116,3 +119,5 @@ inView(".fotogalleryinview_2", ({ target }) => {
 inView(".billedet_af_bogen", () => {
   animate(".billedet_af_bogen", { x: [-2000, 0] }, { duration: 1 });
 });
+
+
