@@ -192,13 +192,14 @@
           class="sticky top-0 flex snap-x snap-mandatory list-none flex-row"
         >
           <li
-            class="flex h-[100vh] w-[100vw] flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden bg-[url('noise-right.png')] bg-right bg-no-repeat px-6"
+            class="flex h-[100vh] w-[100vw] relative flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden pl-6"
           >
+          <div class="-z-50 opacity-20"><img src="noise-right.png" alt="background image"></div>
             <div class="flex snap-center flex-col gap-7 md:px-56">
-              <h3 class="bg-white text-3xl md:text-6xl">
+              <h3 class="bg-white text-3xl md:text-6xl absolute bottom-2/3">
                 En Skille<span class="glitch-font skew-y-12">vej</span>
               </h3>
-              <p class="bg-white">
+              <p class="absolute bottom-1/2">
                 Pierre tjente godt det følgende årti. Men stille og roligt
                 begyndte billederne også at give ham kvalme.
               </p>
@@ -206,10 +207,11 @@
             <!-- <div class="absolute bottom-0"><img src="skillevej.svg" alt="sign" class="w-36 h-auto .wobble-hor-bottom:hover"></div> -->
           </li>
           <li
-            class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden bg-[url('noise-left.png')] bg-left bg-no-repeat px-6"
+            class="relative flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
           >
-            <div class="snap-center md:px-60">
-              <p class="bg-white">
+          <div class="opacity-30"><img src="noise-left.png" alt="background noise texture" class="h-screen"></div>
+            <div class="snap-center px-6 md:px-60">
+              <p class="absolute bottom-[45%]">
                 Han kunne ikke holde sit eget arbejde ud, og måtte finde et
                 modsvar til alle de blankpolerede fotos. Noget han kunne lave
                 med stolthed. <br />
@@ -221,7 +223,7 @@
           <li
             class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center gap-7 overflow-hidden px-6"
           >
-            <div class="flex snap-center flex-col gap-7 pt-40 md:px-60 relative">
+            <div class="flex snap-center flex-col gap-7 pt-[30%] md:px-60 relative">
               <p class="text-center">
                 Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
                 Glitch art og polaroid fotografering, og begyndte stille og
@@ -264,10 +266,11 @@
             </div>
           </li>
           <li
-            class="flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden bg-[url('noise-bottom.png')] px-6"
+            class="relative flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
           >
+          <div class="absolute bottom-0 opacity-30 "><img src="noise-bottom.png" alt="background image" class=""></div>
             <div class="snap-center md:px-60">
-              <p class="bg-white">
+              <p class="absolute">
                 Pierre tog det endda så vidt at han ikke kun droppede at tage
                 stock-fotos. Han fjernede også alle stock-fotos fra de
                 tjenester, han solgte sine fotos hos. <br />
@@ -348,7 +351,7 @@
       </section>
       <section class="fotokunst parallaxcontainer_men_pierre">
         <article class="flex h-screen flex-col items-center justify-center">
-          <p class="men_pierre_para w-3/4">
+          <p class="men_pierre_para w-1/2">
             Pierre er begyndt at sælge fotokunst på nettet, og har udgivet sin
             første foto-bog med titlen “Lidt i fem,” som er en fotografisk
             odyssé om at slæbe en brandert hjem i de tidlige morgentimer. I
