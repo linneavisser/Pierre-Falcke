@@ -1,6 +1,6 @@
 import "./style.css";
 /* Import af Motion One bibliotek */
-import { animate, stagger, inView, scroll, timeline } from "motion";
+import { animate, stagger, glide, inView, scroll, timeline } from "motion";
 
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
@@ -18,7 +18,6 @@ document
       target: elementderskalparallaxes2,
     });
   });
-
 
 // HORISONTAL
 const items = document.querySelectorAll("#horizontal-list li");
@@ -175,3 +174,29 @@ document.querySelector("#closeLomo").addEventListener("click", hideLomo);
 // if (inView)
 // {scrollDesk();
 // }
+/* animation af billederne af bogen */
+
+
+/* animation af billedgalleri */
+inView(".fotogalleryinview_1", ({ target }) => {
+  animate(
+    target.querySelectorAll("img"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
+
+inView(".fotogalleryinview_2", ({ target }) => {
+  animate(
+    target.querySelectorAll("img"),
+    { x: [-2000, 0] },
+    { duration: 1, delay: stagger(1, { start: 0.25 }) }
+  );
+});
+
+/* bogen kommer fra siden af*/
+inView(".billedet_af_bogen", () => {
+  animate(".billedet_af_bogen", { x: [-2000, 0] }, { duration: 1 });
+});
+
+

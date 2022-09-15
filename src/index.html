@@ -21,6 +21,19 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <!--For at skabe en cursor hen over køb knappen-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            cursor: {
+              mincursor: "url(cursor.svg) 25 25, pointer",
+            },
+          },
+        },
+      };
+    </script>
     <!--Brødtekst font type SLUT-->
   </head>
   <body class="scroll-smooth">
@@ -93,18 +106,9 @@
         <p>Faktisk kan han ikke fordrage sit eget arbejde...</p>
       </section>
       <!-- HUTIGE FACTS SECTION -->
-      <section class="parallaxcontainer_hurtige_facts flex flex-col items-center justify-center"
-      id="hurtige_facts"
-    >
-      <article
-        class="hurtig_para flex flex-col items-center justify-center gap-8"
-      >
-        <h3 class="staggeranimation hurtige_facts_overskrift mb-7 text-5xl">
-          Hurtige facts
-        </h3>
-        <ul
-          class="li_container flex w-96 flex-col items-center justify-center gap-20"
-        >
+      <section class="parallaxcontainer_hurtige_facts flex flex-col items-center justify-center" id="hurtige_facts">
+        <article class="hurtig_para flex flex-col items-center justify-center gap-8">
+          <ul>
           <div class="million_div relative">
             <li class="staggeranimation hurtige_facts_li relative text-lg">
               Pierre sælger 2 millioner fotos om året.
@@ -158,12 +162,12 @@
        <section class="stockParallax h-30"><p class="mb-5">Pierre over til digital fotografering i starten af 2000’erne, da han begyndte at studere fotografisk kommunikation på DMJX. Her åbnede en ny verden sig: Reklamefotografering i studie, lyssætning og manipulering af billeder i Photoshop blev hans nye stil. </p></section>
        </section>
     <div id="" class="bg-[#EDE5DD] -z-20 mt-5 mb-10 relative">
-     <section class=""> <p id="berømmelseQuote" class="text-2xl font-light pl-6 py-16 z-50 text-[#A98B88]"><span class="absolute top-20 left-1 text-[156px] text-[#DBCCBC] -z-10">"</span> Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn, lukker.</p></section>
+     <section class=""> <p id="berømmelseQuote" class="text-2xl font-light pl-6 py-16 z-50 text-[#A98B88]"><span class="absolute top-20 left-1 text-[156px] text-[#DBCCBC] -z-10">"</span> Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn, lukker.</p>
+    </section>
     </div>
     <section class="md:flex h-screen md:gap-24 md:px-16">
       <section class="stockParallax h-30"><p class="mb-5">Så Pierre gav sig selv en udfordring: At blive landets bedst sælgende stock-fotograf. Pierre lejede et gammelt, billigt erhvervslokale i Ishøj industri, fik fløjet billige skuespillere ind fra Polen og Baltikum, og fotograferede 10 timer om dagen.</p></section>
       <section class="stockParallax h-30"><p class="mb-5">Pierres profeti om stock-foto branchen holdt stik. Pierre var allerede en af landets bedst sælgende stock-fotografer, før han blev færdig med studiet på DMJX. </p></section>
-
     </section>
     </section>
    
@@ -269,8 +273,9 @@
             class="image1_baggrund_bog grid-flow-col-2 grid place-content-center"
             src="lidt_i_fem_baggrund.svg"
             alt="lidt i fem
-          grafik som baggrund">
-        </div> 
+          grafik som baggrund"
+          />
+        </div>
       </section>
       <!-- EN NY BEGYNDELSE SECTION -->
       <section
@@ -308,7 +313,7 @@
         </article>
       </section>
       <!--Sektionen med bogen lidt i fem-->
-      <section id="parent_element_bog_sektion" class="pb-40">
+      <section id="parent_element_bog_sektion">
         <img
           class="image1_baggrund_bog"
           src="lidt_i_fem_baggrund.svg"
@@ -335,7 +340,7 @@
       <div
         class="grid place-content-center bg-[url('background_thing.svg')] bg-center bg-no-repeat p-10"
       >
-        <p class="p-10">Som Pierre forklarer det:</p>
+        <p class="p-20">Som Pierre forklarer det:</p>
       </div>
       <!--______________Sektionen med det sidste quote i sort og hvid___________-->
       <section id="parent_element_quote2">
@@ -362,7 +367,72 @@
           />
         </div>
       </section>
+      <!--Sektionen med billedgalleri-->
+      <div
+        class="grid place-content-center bg-[url('background_thing.svg')] bg-center bg-no-repeat p-10"
+      >
+        <p class="p-10">
+          Udforsk Pierres værker og træd ind i hans nyfundne kreative univers:
+        </p>
+      </div>
+      <!--Billed galleri scrolling horizontalt-->
+      <section>
+        <div class="fotogalleryinview_1 flex flex-wrap">
+          <img class="w-1/3 p-2" src="pic_1.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_2.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_7.webp" alt="" />
+        </div>
+        <div class="fotogalleryinview_2 flex flex-wrap place-content-center">
+          <img class="w-1/3 p-2" src="pic_9.webp" alt="" />
+          <img class="w-1/3 p-2" src="pic_4.webp" alt="" />
+        </div>
+      </section>
+
+      <!--____________________Køb pierres bog___________________-->
+      <section>
+        <div class="flex justify-center">
+          <p class="w-auto p-20">
+            Bestil bogen "Lidt i Fem" i dag og lad dig inspirere af Pierres
+            fotostil.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <button
+            id="køb_knap"
+            class="hover:cursor-mincursor w-40 rounded-md bg-white text-black hover:bg-black hover:text-orange-50"
+          >
+            KØB
+          </button>
+        </div>
+      </section>
     </main>
+    <footer class="h-auto bg-[url('footer_baggrund.svg')] bg-cover pt-96">
+      <section class="flex flex-wrap sm:justify-center lg:justify-between">
+        <div class="w-52 p-2">
+          <h2 id="kontakt_h" class="p-2 text-4xl">Kontakt</h2>
+          <ul>
+            <li>Pierre Falcke</li>
+            <li>pierre@falcke.dk</li>
+            <li>11 22 33 44</li>
+          </ul>
+        </div>
+        <div class="w-52 p-2">
+          <img
+            class="w-52 p-9"
+            src="logo_kamera.svg"
+            alt="logo til hjemmesiden"
+          />
+        </div>
+        <div class="w-52 p-2">
+          <h2 id="credits_h" class="p-2 text-4xl">Credits</h2>
+          <ul>
+            <li>Linnéa Visser - koder & designer</li>
+            <li>Jonas Krogh - koder & designer</li>
+            <li>Nina Vergmann - koder & desginer</li>
+          </ul>
+        </div>
+      </section>
+    </footer>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
