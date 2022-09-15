@@ -7,13 +7,16 @@
     font-family: "Rubik", sans-serif;
     font-weight: 300;
   }
-  
 }
 @layer components {
   .wobble-hor-bottom:hover {
     -webkit-animation: wobble-hor-bottom 0.8s both;
     animation: wobble-hor-bottom 0.8s both;
   }
+}
+p{
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.6842105263157895rem + 1.3157894736842104vw, 1.5rem);
 }
 /* Glitch font type */
 #kunstner_h1 {
