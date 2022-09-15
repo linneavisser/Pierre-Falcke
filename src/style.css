@@ -396,3 +396,11 @@ video {
   right: calc(10%);
   z-index: -1;
 }
+
+@media (max-width: 500px) {
+  .baggrundstreg {
+    bottom: calc(30%);
+    right: calc(10%);
+    z-index: -1;
+  }
+}
