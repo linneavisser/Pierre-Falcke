@@ -62,6 +62,7 @@ var typewriter = new Typewriter(app, {
 
 typewriter.typeString("2 gange").pauseFor(8000).deleteAll().start();
 
+
 //hurtige facts parallax
 document
   .querySelectorAll(".parallaxcontainer_hurtige_facts")
@@ -144,31 +145,23 @@ document.querySelector("#lomoPic").addEventListener("click", showLomo);
 document.querySelector("#closeLomo").addEventListener("click", hideLomo);
 
 // førsøk til typewriter quote
+const quote = document.getElementById("bQuote");
+var i = 0;
+var txt = 'Om ganske få år er hele branchen digital, og dem der ikke hopper med på den digitale vogn, lukker.';
+var speed = 60;
 
-// var app = document.getElementById("type_animation_millioner");
+inView(quote, () => {
+  console.log("Element has entered the viewport")
+  typeWriter()
+});
 
-// var typewriter = new Typewriter(app, {
-//   loop: true,
-// });
-
-// typewriter.typeString("2 millioner").pauseFor(8000).deleteAll().start();
-
-// if (mediaQuery.matches) {
-//   scrollDesk();
-// }
-
-// function scrollDesk() {
-//   window.addEventListener("scroll", function () {
-//     const target = this.document.querySelector(".stockText");
-//     console.log(window.pageYOffset);
-//     var scrolled = window.pageYOffset;
-//     var rate = scrolled * -0.5;
-//     target.style.transform = "translate3d(0px, " + rate + "px, 0px)";
-//   });
-// }
-// if (inView)
-// {scrollDesk();
-// }
+function typeWriter() {
+  if (i < txt.length) {
+  document.getElementById("berømmelseQuote").innerHTML += txt.charAt(i);
+  i++;
+  setTimeout(typeWriter, speed);
+}
+}
 /* animation af billederne af bogen */
 
 /* animation af billedgalleri */
