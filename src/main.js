@@ -106,3 +106,18 @@ document
       target: elementderskalparallaxes2,
     });
   });
+
+//video zoom
+const lillevideo = document.querySelector("#videofil");
+lillevideo.pause();
+
+scroll(
+  ({ y }) => {
+    if (!lillevideo.readyState) return;
+    lillevideo.currentTime = lillevideo.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle"),
+    offset: ["-100vh", "end end"],
+  }
+);
