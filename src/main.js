@@ -149,7 +149,15 @@ document.querySelector("#closeLomo").addEventListener("click", hideLomo);
 
 
 
+// førsøk til typewriter quote
 
+// var app = document.getElementById("type_animation_millioner");
+
+// var typewriter = new Typewriter(app, {
+//   loop: true,
+// });
+
+// typewriter.typeString("2 millioner").pauseFor(8000).deleteAll().start();
 
 // if (mediaQuery.matches) {
 //   scrollDesk();
