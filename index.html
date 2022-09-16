@@ -36,7 +36,7 @@
     </script>
     <!--Brødtekst font type SLUT-->
     <script type="module" crossorigin src="./assets/main.e0326144.js"></script>
-    <link rel="stylesheet" href="./assets/index.3c5f23d2.css">
+    <link rel="stylesheet" href="./assets/index.2b81ddb6.css">
   </head>
   <body class="scroll-smooth">
     <main class="overflow-clip">
@@ -127,7 +127,10 @@
         <article
           class="hurtig_para flex flex-col items-center justify-center gap-8"
         >
-          <ul>
+          <div class="hurtige_facts_overskrift text-5xl">Hurtige facts</div>
+          <ul
+            class="li_container flex flex-col items-center justify-center gap-24"
+          >
             <div class="million_div relative">
               <li class="staggeranimation hurtige_facts_li relative text-lg">
                 Pierre sælger 2 millioner fotos om året.
@@ -222,12 +225,23 @@
 
       <!-- PIERRES BERØMMELSE -->
       <section
+        class="relative flex min-h-screen w-screen flex-col items-center justify-center"
+      >
+        <h3 class="berømmelse_h3">Pierres berømmelse</h3>
+        <video autoplay muted loop id="myVideo">
+          <source src="./assets/coins_final.aac80d7b.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section
         class="flex min-h-screen w-screen flex-col items-center px-6 pt-60 leading-8"
       >
-        <h3 class="text-center text-3xl font-normal lg:text-5xl">
+        <!-- <h3 class="lg:text-5x pb-10 text-center text-3xl font-normal">
           Pierres berømmelse
         </h3>
-        <section class="h-screen md:h-[75vh] md:flex md:gap-24 md:px-16">
+        <video autoplay muted loop id="myVideo">
+          <source src="coins.mp4" type="video/mp4" />
+        </video> -->
+        <section class="h-screen md:flex md:gap-24 md:px-16">
           <section class="stockParallax h-30 md:h-10 md:w-1/2">
             <p class="mb-5">
               Pierres interesse for foto startede som ganske ung - som 10-årig
@@ -302,7 +316,13 @@
           <li
             class="relative flex h-[100vh] w-[100vw] flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
           >
-          <div class="opacity-10"><img src="./assets/noise-left.298f8391.svg" alt="background noise texture" class="h-screen"></div>
+            <div class="opacity-10">
+              <img
+                src="./assets/noise-left.298f8391.svg"
+                alt="background noise texture"
+                class="h-screen"
+              />
+            </div>
             <div class="snap-center px-6 md:px-72">
               <p class="absolute bottom-[45%] md:bottom-[40%] md:w-2/3">
                 Han kunne ikke holde sit eget arbejde ud, og måtte finde et
