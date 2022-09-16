@@ -400,3 +400,24 @@ video {
   right: calc(10%);
   z-index: -1;
 }
+
+/*pieerres berømmelse video baggrund*/
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.berømmelse_h3 {
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 2rem;
+  font-size: clamp(2rem, 0.736842105263158rem + 5.263157894736842vw, 4rem);
+}
